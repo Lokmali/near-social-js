@@ -80,16 +80,41 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // TODO: create a social card
-      // image: 'img/docusaurus-social-card.jpg',
+      image: 'images/social-card.png',
       metadata: [
         {
           name: 'keywords',
-          content: 'blockchain, near, nearprotocol',
+          content:
+            'near, nearprotocol, near-social, social.near, sdk, javascript, typescript',
+        },
+        { property: 'og:title', content: 'NearSocial.JS' },
+        {
+          property: 'og:description',
+          content: 'JavaScript SDK for the NEAR Social graph (social.near).',
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://nearbuilders.github.io/near-social-js/images/social-card.png',
+        },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'NearSocial.JS' },
+        {
+          name: 'twitter:description',
+          content: 'JavaScript SDK for the NEAR Social graph (social.near).',
+        },
+        {
+          name: 'twitter:image',
+          content:
+            'https://nearbuilders.github.io/near-social-js/images/social-card.png',
         },
       ],
       navbar: {
         title,
+        logo: {
+          alt: 'NearSocial.JS logo',
+          src: '/images/near-social-js-logo.png',
+        },
         items: [
           {
             type: 'doc',

@@ -1,4 +1,25 @@
 .navbar {
+  &__brand {
+    align-items: center;
+    display: flex;
+    gap: 0.35rem;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+
+    img {
+      display: block;
+      height: 18px;
+      width: auto;
+    }
+  }
+
+  &__title {
+    line-height: 1;
+  }
+
   &__icon {
     &:before {
       content: '';
